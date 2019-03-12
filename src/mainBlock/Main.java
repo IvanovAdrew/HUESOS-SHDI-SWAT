@@ -26,8 +26,8 @@ public class Main {
                 while(b) {
                     try {
 
-                        arrayOfMyStrings[i] = sc.nextLine();
-                        if (arrayOfMyStrings[i].length() > 20) {
+                        arrayOfMyStrings[i-1] = sc.nextLine();
+                        if (arrayOfMyStrings[i-1].length() > 20) {
                             throw new StringTooLongException();
                         } else {
                             break;
